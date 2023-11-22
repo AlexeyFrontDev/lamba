@@ -93,3 +93,91 @@
     color: #363636;
   }
 }
+
+.info {
+  margin-bottom: 100px;
+  
+  &__part {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+
+    &-title {
+      margin-bottom: 30px;
+      @extend %title-font;
+    }
+    
+    &-textbox {
+      display: flex;
+      justify-content: space-between;
+      gap: 0 20px;
+    }
+
+    &-img {
+      object-fit: cover;
+    }
+  }
+
+  &__part--first {
+    display: block;
+  }
+
+  &__content {
+    flex-basis: 415px;
+  }
+
+  &__part--second &__text {
+    max-width: 352px;
+  }
+
+  &__part--third {
+    padding-top: 60px;
+  }
+
+  &__part--third &__text {
+    max-width: 377px;
+  }
+
+  
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 14px;
+    flex-basis: 440px;
+  }
+
+  &__table {
+    flex-basis: 450px;
+    padding-top: 15px;
+    border-bottom: 1px solid #040404;
+    border-top: 1px solid #040404;
+    
+
+    td {
+      padding-bottom: 20px;
+    }
+    
+  }
+}
+
+.track {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  min-height: 890px;
+  background-color: #fff;
+  background-image: url(../images/track-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  & .info__part-title, & .info__text {
+    max-width: 434px;
+  }
+
+  &__img {
+    max-width: 743px;
+    margin-left: 153px;
+    margin-top: 250px;
+  }
+}
+

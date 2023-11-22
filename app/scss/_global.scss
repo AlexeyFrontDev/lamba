@@ -11,8 +11,21 @@ body {
 	font-weight: 400;
 }
 
-.container {
+.container-big {
 	max-width: 1220px;
 	margin: 0 auto;
 	padding: 0 10px;
+}
+
+.container {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+%title-font {
+	font-size: 32px;
+	font-weight: 300;
+	line-height: normal;
+	text-transform: uppercase;
 }
