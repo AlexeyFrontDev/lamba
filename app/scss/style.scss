@@ -181,3 +181,137 @@
   }
 }
 
+.evo {
+  padding-bottom: 100px;
+  
+  &-black {
+    padding: 100px 0 50px;
+    background-color: #363636;
+    color: #FFF;
+
+    &__inner {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/evo-hexagon1.svg);
+        background-repeat: no-repeat;
+        top: 217px;
+        left:0;
+        transform: translateX(-80%);
+        width: 185px;
+        height: 213px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/evo-hexagon2.svg);
+        background-repeat: no-repeat;
+        top: 298px;
+        left: -37px;
+        width: 498px;
+        height: 572px;
+      }
+
+
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 170px;
+    }
+
+    &__title {
+      font-size: 32px;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: uppercase;
+      flex-basis: 48%;
+    }
+    
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__box {
+      flex-basis: 50%;
+    }
+
+    &__img {
+      position: relative;
+      z-index: 2;
+      display: block;
+      max-width: 725px;
+      margin: 0 auto 60px 80px;
+    }
+
+    &__descr-list {
+      display: flex;
+      justify-content: center;
+      gap: 0 65px;
+    }
+  }
+
+  &-white {
+    padding-top: 126px;
+
+    &__inner {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/evo-hexagon3.png);
+        background-repeat: no-repeat;
+        top: -150px;
+        left: 50%;
+        width: 274px;
+        height: 257px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/evo-hexagon4.png);
+        background-repeat: no-repeat;
+        top: 0;
+        left: 75%;
+        width: 324px;
+        height: 311px;
+      }
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      max-width: 590px;
+    }
+    
+    &__text:first-child {
+      max-width: 285px;
+    }
+    &__text:nth-child(2) {
+      max-width: 437px;
+    }
+    
+    &__video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      background-image: url(../images/evo-video.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-height: 264px;
+
+      &-link {
+        color: #fff;
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
